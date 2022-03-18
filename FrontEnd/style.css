@@ -1,0 +1,292 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+.kontejner {
+  background-color: white;
+  /* min-width: 440px; */
+  margin: 10px;
+}
+
+.kontHeading {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #999999;
+}
+.rightContainer {
+  /* display: flex; */
+  width: 70%;
+  /* height: 300px; */
+}
+
+.divFlexLeft {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.formContainer {
+  width: 30%;
+}
+
+.formaDodajRadnika {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+}
+.labela {
+  text-align: left;
+  width: 100%;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.ime,
+.prezime,
+.jmbg,
+.emailRadnika,
+.senioritetRadnika,
+.tipTaska,
+.imeTaska,
+.opisTaska {
+  width: calc(100% - 40px);
+  margin-left: 10px;
+  height: 20px;
+}
+
+.dodajRadnikaDugme {
+  width: calc(100% - 30px);
+  margin-left: 10px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.ucitajDugme {
+  width: calc(50% - 30px);
+  margin-left: 10px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.todo {
+  background-color: rgb(64, 117, 177);
+}
+.wip {
+  background-color: rgb(44, 148, 40);
+}
+.bug {
+  background-color: rgb(226, 82, 82);
+}
+.rightHeader {
+  width: 100%;
+  background-color: #99999928;
+  height: 180px;
+}
+.rightHeader p {
+  color: red;
+  font-size: 24px;
+  text-align: left;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.selectRadnik {
+  width: 150px;
+  height: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.selectRadnikOptions {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.selectTask {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.dodajTaskRadnikuDugme {
+  width: 150;
+  font-size: 20px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.taskKontejner {
+  /* width: 50%; */
+  height: 100px;
+  /* background-color: #888; */
+  margin: 10px;
+  position: relative;
+}
+
+.rightBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.taskIme {
+  color: white;
+  text-decoration: underline;
+  font-size: 15px;
+  padding-top: 20px;
+}
+.obrisiTask {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.taskOpis,
+.imeRadnika {
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .formContainer {
+    width: 100%;
+  }
+  .rightContainer {
+    width: 100%;
+  }
+  .divFlexLeft {
+    flex-direction: column;
+  }
+}
+
+/* -------------------------------------------------------------------- */
+h3 {
+  text-align: center;
+  margin: 0%;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.kontLabele {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.kontDugmici {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.kontSobe {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  background-color: darkred;
+}
+
+.kontejnerSoba {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  flex-grow: 1;
+  margin: 10px;
+  background-color: dodgerblue;
+}
+
+.kontFormaSoba {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kontFormaSobaLabele {
+  display: flex;
+  flex-grow: 3;
+  flex-basis: 150px;
+}
+
+.kontFormaSobaDugmici {
+  display: flex;
+  justify-content: right;
+  flex-grow: 1;
+}
+
+.sobaLab {
+  margin: 5px;
+}
+
+.kontKreveti {
+  display: flex;
+  flex-direction: column;
+  /* background-color: darkseagreen; */
+}
+
+.kontejnerPacijent {
+  display: flex;
+  justify-content: space-between;
+  background-color: goldenrod;
+  margin: 5px;
+}
+
+.dugmeDiv {
+  display: flex;
+}
+
+/* STIL SA W3SCHOOLS ZA MODALE */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close,
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close,
+.close1:hover,
+.close,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

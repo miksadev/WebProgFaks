@@ -1,0 +1,2 @@
+Projekat je task menadzer.
+omogucava programerskim firmama dodaje radnike i taskove i da dodeljuju taskove radnicima.
